@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Movie-Website</title>
+</head>
+<body>
+    <header>
+        <div class="logo">CINEBOX</div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./movies.html">Movies</a></li>
+                <li><a href="./list.html">My List</a><span id="count">0</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="movie">
+            <img src="" alt="">
+            <h3></h3>
+            <h4></h4>
+            <p></p>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector("img").src=localStorage.getItem("poster");
+        document.querySelector("h3").innerHTML=localStorage.getItem("title");
+        document.querySelector("h4").innerHTML=localStorage.getItem("rating");
+        document.querySelector("p").innerHTML=localStorage.getItem("description");
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0B0E14;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+}
+
+.logo {
+    font-family: "Oswald", sans-serif;
+    color: yellow;
+    padding-left: 40px;
+    font-size: 30px;
+
+}
+
+nav {
+    color: #8e9aaf;
+    padding-right: 30px;
+}
+
+a {
+    color: #8e9aaf;
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    font-family: "Inter", sans-serif;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+ul li span {
+    color: yellow;
+    background: linear-gradient(110deg, #09121d 0%, #102235 50%, #1b3654 100%);
+    padding: 10px;
+    border-radius: 100%;
+}
+
+a:hover {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 15px;
+}
+
+body {
+    background-color: #0B0E14;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.home-cta {
+    margin: auto;
+    width: 90%;
+    background: linear-gradient(110deg, #09121d 0%, #102235 50%, #1b3654 100%);
+    height: 80vh;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 25px;
+
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta h3 {
+    color: yellow;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+
+}
+
+.cta h1 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 40px;
+}
+
+.cta p {
+    color: white;
+    font-family: "Inter", sans-serif;
+    padding-top: 20px;
+    letter-spacing: 2px;
+}
+
+.btn {
+    padding-top: 60px;
+}
+
+#discover {
+    padding-top: 50px;
+    color: #8e9aaf;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+
+}
+
+.btn a {
+    background-color: yellow;
+    border: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(255, 224, 51, 0.55);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(255, 224, 51, 0.7);
+}
+
+.movie-grid {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 25px;
+    row-gap: 50px;
+
+}
+
+.bottn {
+    display: flex;
+    margin-left: 70px;
+    padding-top: 30px;
+    gap: 5px;
+
+}
+
+.bottn button {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #8e9aaf;
+    transition: 1s;
+}
+
+.bottn button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.grid-row {
+    width: 100%;
+    align-items: stretch;
+    color: white;
+    display: grid;
+    gap: 8px;
+    transition: transform .45s;
+    position: relative;
+}
+
+.grid-row:hover {
+    transform: scale(1.05);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+}
+
+.info {
+    text-align: left;
+}
+
+h3 {
+    color: rgb(133, 133, 37);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+
+}
+
+.save-btn {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    display: grid;
+    width: 29px;
+    height: 29px;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 50%;
+    background: rgba(13, 14, 15, .62);
+    color: white;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.save-btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.page-intro {
+    width: 100%;
+    height: 120vh;
+}
+
+.list {
+    width: 100%;
+    padding: 40px;
+    border-bottom: 1px solid #8e9aaf;
+    color: white;
+    border-top: 1px solid #8e9aaf;
+}
+
+.llist {
+    margin-left: 8ex;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5ex;
+}
+
+.llist h3 {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.llist h1 {
+    font-size: 70px;
+    font-family: "Oswald", sans-serif;
+}
+
+.llist h1 span {
+    color: yellow;
+}
+
+.llist p {
+    font-family: "Inter", sans-serif;
+
+}
+
+.empty-watchlist {
+    text-align: center;
+    padding-top: 55px;
+    color: white;
+}
+
+.empty-watchlist h2 {
+    color: yellow;
+    border: 1px solid #8e9aaf;
+    display: inline-grid;
+    width: 46px;
+    height: 46px;
+    place-items: center;
+    font-size: 25px;
+    border-radius: 50%;
+
+}
+
+.empty-watchlist h3 {
+    padding-top: 28px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.empty-watchlist p {
+    padding-top: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+.bot {
+    padding-top: 40px;
+}
+
+.bot a {
+    color: black;
+    background-color: rgb(141, 141, 25);
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 12px 24px;
+
+}
+
+.mv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.items {
+    background-color: aliceblue;
+    /* height: 22%; */
+}
+
+.items img {
+    width: 100%;
+}
+
+h2 {
+    color: white;
+
+}
+
+.higher-rating {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    gap: 14px;
+    overflow-x: scroll;
+}
+
+.higher-rating img {
+    width: 200px;
+}
+
+.higher-rating h2,
+.higher-rating p {
+    font-size: small;
+    color: white;
+}
+
+.higher-rating div {
+    width: 30vw;
+}
+
+.higher-rating {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
+}
+.higher-rating::-webkit-scrollbar { 
+    display: none;  /* Older Safari and Chromium */
+}

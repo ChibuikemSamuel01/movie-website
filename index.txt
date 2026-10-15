@@ -1,0 +1,95 @@
+document.querySelector("img").src = localStorage.getItem("poster")
+    document.querySelector("h3").innerHTML = localStorage.getItem("title")
+    document.querySelector("h4").innerHTML = localStorage.getItem("rating")
+    document.querySelector("p").innerHTML = localStorage.getItem("description")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    let moviesElem = document.querySelector(".mv");
+let numbers = [];
+for (i = 1; i <= 10; i++){
+    numbers.push(i);
+
+}
+// let buttons = [];
+let page = 1;
+
+numbers.forEach(number => {
+    document.querySelector(".paginate").innerHTML += `
+    <button class="page-btn">${number}</button>
+    `
+
+})
+let cards;
+let movies;
+let btns = document.querySelectorAll(".page-btn");
+
+ //console.log(btns);
+
+btns.forEach((button) => {
+    button.addEventListener("click", () => {
+        page = button.innerHTML;
+        ok(page)
+    });
+});
+
+let ok = async (page) =>{
+    const requestURL = `https://jsonfakery.com/movies/simple-paginate?current_page=${page}`;
+    const response = await fetch(requestURL);
+    const result = await response.json();
+    //console.log(result);        
+    movies = result.data
+    movies.forEach(movie => {
+        moviesElem.innerHTML += `
+        <div class="items" id=${movie.id}>
+        <img src="${movie.poster_path}">
+        <h2>${movie.original_title}</h2>
+        <p>${movie.overview}</p>
+        </div>
+        `
+        console.log(movie.id)
+    });
+
+    cards = document.querySelectorAll(".items");
+    //console.log(cards)
+
+    cards.forEach((card) =>{
+        //console.log(card)
+        card.addEventListener("click", () =>{
+            let cardId = card.id;
+           //console.log(cardId)
+            movies.forEach(movie =>{
+                if (cardId == movie.id){
+                    localStorage.setItem("title",`${movie.original_title}`); 
+                    localStorage.setItem("description",`${movie.overview}`);
+                    localStorage.setItem("poster",`${movie.poster_path}`);
+                    localStorage.setItem("rating",`${movie.vote_average}`);
+                    localStorage.setItem("casts",`${movie.casts}`);
+                    window.open("Movie.html", "_self");
+
+                }
+            });
+        });
+    });
+}
+
+// window.open(`Movie.html?variable=value`, "_self");`  

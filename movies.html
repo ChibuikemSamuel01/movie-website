@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Movie</title>
+</head>
+<body>
+    <header>
+        <div class="logo">CINEBOX</div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./movies.html">Movies</a></li>
+               <li><a href="./list.html">My List</a><span id="count">0</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-intro">
+        <section class="list">
+            <div class="llist">
+             <h3>FIND YOUR NEXT FAVORITE</h3>
+             <h1>Movie <span>library</span></h1>
+             <p>Browse the collection, pick a genre, and watch official trailers.</p>
+            </div>
+        </section>
+        <section>
+          <div class="bottn">
+             <button data-category="all">All</button>
+             <button data-category="scifi-fantasy">Sci-fi</button>
+             <button data-category="comedy">Comedy</button>
+             <button data-category="action-adventure">Action</button>
+             <button data-category="horror">Horror</button>
+             <button data-category="animation">Animation</button>
+          </div>
+          <div class="movie-grid">
+             <div class="grid-row"></div>
+         </div>
+        </section>
+    </main>
+
+</body>
+<script src="./script.js"></script>
+</html>
