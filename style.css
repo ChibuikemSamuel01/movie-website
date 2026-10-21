@@ -11,6 +11,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    position: sticky;
+    top: 0;
 
 }
 
@@ -210,33 +212,10 @@ h3 {
     font-family: "Inter", sans-serif;
 
 }
-
-.save-btn {
-    position: absolute;
-    top: 15px;
-    right: 12px;
-    display: grid;
-    width: 29px;
-    height: 29px;
-    place-items: center;
-    border: 1px solid rgba(255, 255, 255, .35);
-    border-radius: 50%;
-    background: rgba(13, 14, 15, .62);
-    color: white;
-    font-size: 18px;
-    line-height: 1;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.save-btn:hover {
-    background-color: yellow;
-    color: black;
-}
-
 .page-intro {
     width: 100%;
-    height: 120vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 .list {
@@ -272,38 +251,6 @@ h3 {
     font-family: "Inter", sans-serif;
 
 }
-
-.empty-watchlist {
-    text-align: center;
-    padding-top: 55px;
-    color: white;
-}
-
-.empty-watchlist h2 {
-    color: yellow;
-    border: 1px solid #8e9aaf;
-    display: inline-grid;
-    width: 46px;
-    height: 46px;
-    place-items: center;
-    font-size: 25px;
-    border-radius: 50%;
-
-}
-
-.empty-watchlist h3 {
-    padding-top: 28px;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    color: white;
-}
-
-.empty-watchlist p {
-    padding-top: 6px;
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-}
-
 .bot {
     padding-top: 40px;
 }
@@ -316,51 +263,20 @@ h3 {
     border-radius: 10px;
     font-weight: 500;
     padding: 12px 24px;
-
 }
-
-.mv {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-}
-
-.items {
-    background-color: aliceblue;
-    /* height: 22%; */
-}
-
-.items img {
-    width: 100%;
-}
-
-h2 {
-    color: white;
-
-}
-
 .higher-rating {
     display: flex;
     width: 100%;
-    margin: auto;
-    gap: 14px;
-    overflow-x: scroll;
+   margin: auto;
+   gap: 14px;
+   overflow-x: scroll; 
+  position: relative;
+  padding-bottom: 12px;
 }
 
 .higher-rating img {
     width: 200px;
 }
-
-.higher-rating h2,
-.higher-rating p {
-    font-size: small;
-    color: white;
-}
-
-.higher-rating div {
-    width: 30vw;
-}
-
 .higher-rating {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
@@ -368,3 +284,186 @@ h2 {
 .higher-rating::-webkit-scrollbar { 
     display: none;  /* Older Safari and Chromium */
 }
+#page-down{
+  padding-top: 25px;   
+}
+#why-you{
+    padding-left: 15px;
+    color:yellow;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.higher-rating{
+    padding-top: 20px;
+  
+}
+.higher-rating img{
+    object-fit: cover;
+   border-radius: 12px;   
+   
+}
+.single{
+    border: 1px solid rgb(138, 138, 55);
+    border-radius: 12px;
+    transition: transform 1s ;  
+    
+}
+.single:hover{
+    transform: scale(1.05);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+.higher-rating h2{
+    color: white;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+
+}
+.info-bot{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+.info p{
+    color: yellow;
+}
+.bottom p{
+    color: #8e9aaf;
+}
+.mv {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    padding-top: 20px;
+    row-gap: 30px;
+
+
+}
+#purple{
+    color: yellow;
+    font-family:  "Oswald", sans-serif;
+    padding-top: 12px;
+    font-size: 50px; 
+    letter-spacing: 2px;
+    width: 80%;
+    margin: auto; 
+  
+}
+.best{
+    display: flex;
+    justify-content: space-between;
+    color:rgba(255, 255, 255, 0.555);
+    width: 80%;
+    margin: auto;  
+  
+}
+#refuse{
+    font-family:"Inter", sans-serif;
+}
+.best input{
+    border: none;
+    width: 30%;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid yellow;
+}
+.items{
+    background-color:rgb(22, 22, 46);
+    position: relative;
+}
+
+.items img {
+    width: 100%;
+    object-fit: cover;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+   padding: 8px;
+   gap: 12px;
+}
+.last h2{
+    font-size: 14px;
+    font-family:"Inter", sans-serif ;
+    color: white;
+    font-weight: 500;
+}
+.last p{
+    color: yellow;
+}
+.btnn{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 18px;
+    width: 29px;
+    height: 29px;
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+   background: rgba(13, 14, 15, .62);
+   color: white; 
+    line-height: 1;
+    transition: .2s;
+}
+.btnn:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.carousel-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  transform: translateX(-50%);
+}
+
+.carousel-item.active {
+  opacity: 1;

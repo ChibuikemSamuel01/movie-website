@@ -1,199 +1,4 @@
-﻿// const movies = [
-//     {
-//         id: 1,
-//         title: "Dune: Part Two",
-//         genre: "Sci-Fi",
-//         year: 2024,
-//         overview: "Paul Atreides joins the Fremen as he seeks justice and faces a choice that could shape the future.",
-//         thumbnail: "https://picsum.photos/seed/dune-part-two/500/750"
-//     },
-//     {
-//         id: 2,
-//         title: "Spider-Man: Across the Spider-Verse",
-//         genre: "Animation",
-//         year: 2023,
-//         overview: "Miles Morales meets a team of Spider-People while travelling across the multiverse.",
-//         thumbnail: "https://picsum.photos/seed/spider-verse/500/750"
-//     },
-//     {
-//         id: 3,
-//         title: "Interstellar",
-//         genre: "Sci-Fi",
-//         year: 2014,
-//         overview: "A group of explorers travels beyond our galaxy in search of a future for humanity.",
-//         thumbnail: "https://picsum.photos/seed/interstellar/500/750"
-//     },
-//     {
-//         id: 4,
-//         title: "Inception",
-//         genre: "Sci-Fi",
-//         year: 2010,
-//         overview: "A skilled thief enters people's dreams to steal secrets and is offered one last job.",
-//         thumbnail: "https://picsum.photos/seed/inception/500/750"
-//     },
-//     {
-//         id: 5,
-//         title: "The Matrix",
-//         genre: "Sci-Fi",
-//         year: 1999,
-//         overview: "A computer hacker discovers the truth behind the world he thought he knew.",
-//         thumbnail: "https://picsum.photos/seed/the-matrix/500/750"
-//     },
-//     {
-//         id: 6,
-//         title: "Arrival",
-//         genre: "Sci-Fi",
-//         year: 2016,
-//         overview: "A linguist works to communicate with mysterious visitors who have arrived on Earth.",
-//         thumbnail: "https://picsum.photos/seed/arrival/500/750"
-//     },
-//     {
-//         id: 7,
-//         title: "Everything Everywhere All at Once",
-//         genre: "Comedy",
-//         year: 2022,
-//         overview: "An overwhelmed laundromat owner discovers she may be the key to saving the multiverse.",
-//         thumbnail: "https://picsum.photos/seed/everything-everywhere/500/750"
-//     },
-//     {
-//         id: 8,
-//         title: "Guardians of the Galaxy",
-//         genre: "Action",
-//         year: 2014,
-//         overview: "A band of unlikely space adventurers joins forces to protect the galaxy.",
-//         thumbnail: "https://picsum.photos/seed/guardians-galaxy/500/750"
-//     },
-//     {
-//         id: 9,
-//         title: "The Batman",
-//         genre: "Action",
-//         year: 2022,
-//         overview: "Batman investigates a series of crimes that expose corruption in Gotham City.",
-//         thumbnail: "https://picsum.photos/seed/the-batman/500/750"
-//     },
-//     {
-//         id: 10,
-//         title: "Top Gun: Maverick",
-//         genre: "Action",
-//         year: 2022,
-//         overview: "Maverick trains a new team of pilots for a dangerous and demanding mission.",
-//         thumbnail: "https://picsum.photos/seed/top-gun-maverick/500/750"
-//     },
-//     {
-//         id: 11,
-//         title: "The Grand Budapest Hotel",
-//         genre: "Comedy",
-//         year: 2014,
-//         overview: "A hotel concierge and his protégé become caught up in a curious adventure.",
-//         thumbnail: "https://picsum.photos/seed/grand-budapest-hotel/500/750"
-//     },
-//     {
-//         id: 12,
-//         title: "Coco",
-//         genre: "Animation",
-//         year: 2017,
-//         overview: "A young musician journeys to the Land of the Dead to learn about his family.",
-//         thumbnail: "https://picsum.photos/seed/coco-movie/500/750"
-//     },
-//     {
-//         id: 13,
-//         title: "Parasite",
-//         genre: "Drama",
-//         year: 2019,
-//         overview: "Two families from very different circumstances become unexpectedly connected.",
-//         thumbnail: "https://picsum.photos/seed/parasite-movie/500/750"
-//     },
-//     {
-//         id: 14,
-//         title: "Knives Out",
-//         genre: "Comedy",
-//         year: 2019,
-//         overview: "A detective investigates a family after the death of a celebrated crime novelist.",
-//         thumbnail: "https://picsum.photos/seed/knives-out/500/750"
-//     },
-//     {
-//         id: 15,
-//         title: "The Martian",
-//         genre: "Sci-Fi",
-//         year: 2015,
-//         overview: "An astronaut stranded on Mars uses his ingenuity to survive while awaiting rescue.",
-//         thumbnail: "https://picsum.photos/seed/the-martian/500/750"
-//     },
-//     {
-//         id: 16,
-//         title: "The Lord of the Rings: The Fellowship of the Ring",
-//         genre: "Fantasy",
-//         year: 2001,
-//         overview: "A hobbit and his companions set out to destroy a powerful ring.",
-//         thumbnail: "https://picsum.photos/seed/fellowship-of-the-ring/500/750"
-//     },
-//     {
-//         id: 17,
-//         title: "Back to the Future",
-//         genre: "Sci-Fi",
-//         year: 1985,
-//         overview: "A teenager travels back in time and must make sure his parents meet.",
-//         thumbnail: "https://picsum.photos/seed/back-to-the-future/500/750"
-//     },
-//     {
-//         id: 18,
-//         title: "WALL-E",
-//         genre: "Animation",
-//         year: 2008,
-//         overview: "A little waste-collecting robot finds a new purpose among the stars.",
-//         thumbnail: "https://picsum.photos/seed/wall-e/500/750"
-//     },
-//     {
-//         id: 19,
-//         title: "The Incredibles",
-//         genre: "Animation",
-//         year: 2004,
-//         overview: "A family of superheroes tries to live a quiet life while saving the world.",
-//         thumbnail: "https://picsum.photos/seed/the-incredibles/500/750"
-//     },
-//     {
-//         id: 20,
-//         title: "Toy Story",
-//         genre: "Animation",
-//         year: 1995,
-//         overview: "A cowboy toy and a space ranger learn how to share the spotlight.",
-//         thumbnail: "https://picsum.photos/seed/toy-story/500/750"
-//     },
-//     {
-//         id: 21,
-//         title: "Finding Nemo",
-//         genre: "Animation",
-//         year: 2003,
-//         overview: "A cautious clownfish crosses the ocean to find his missing son.",
-//         thumbnail: "https://picsum.photos/seed/finding-nemo/500/750"
-//     },
-//     {
-//         id: 22,
-//         title: "The Princess Bride",
-//         genre: "Fantasy",
-//         year: 1987,
-//         overview: "A farmhand sets off on a daring quest to reunite with his true love.",
-//         thumbnail: "https://picsum.photos/seed/princess-bride/500/750"
-//     },
-// ];
-
-// let main=document.querySelector("main");
-// const movieGrid=document.querySelector(".movie-grid");
-// const movieCategories=[
-//     "scifi-fantasy",
-//     "comedy",
-//     "action-adventure",
-//     "horror",
-//     "animation"
-// ];
-// let watchlist=[];
-// let btn=document.querySelectorAll(".save-btn");
-// let display=document.querySelector("#watchlist");
-// let countNum=document.querySelector("#count");
-
-
-
-
+﻿
 // const categoryButtons = document.querySelectorAll(".bottn button");
 // categoryButtons.forEach((button)=>{
 //     button.addEventListener("click",async ()=>{
@@ -248,44 +53,49 @@ let numbers = [];
 for (i = 1; i <= 10; i++) {
     numbers.push(i);
 }
-let moviess;
+let moviess = [];
 let page = 1;
-
-// numbers.forEach(number => {
-//     paginate.innerHTML += `
-//     <button class="page-btn">${number}</button>`
-// });
-
-// let buttons = document.querySelectorAll(".page-btn");
-
-// buttons.forEach(button => {
-//     button.addEventListener("click", () => {
-//         page = button.innerHTML
-//         ok(page);
-
-//     });
-// });
-
+let myList = JSON.parse(localStorage.getItem("myList")) || [];
+let EmptyWatchList = document.querySelector("#watchlist");
+let counter = document.querySelector("#count");
+let displayOthers = true;
 
 async function ok(page = 1) {
     const requestURL = `https://jsonfakery.com/movies/simple-paginate?current_page=${page}`;
     const response = await fetch(requestURL);
     const result = await response.json();
-    moviess = result.data;
-    moviess.forEach(movie => {
-        mv.innerHTML += `
+    moviess = [] = result.data;
+    moviess.forEach((movie, index) => {
+        if (mv) {
+            mv.innerHTML += `
     <div class="items" id="${movie.id}">
-    <img src=${movie.poster_path}>
-    <h2>${movie.original_title}</h2>
-    <p>${movie.overview}</p>
+       <img src=${movie.poster_path}>
+       <div class="last">
+          <h2>${movie.original_title}</h2>
+          <p>${movie.popularity}</p>
+          <button class="btnn"> + </button>
+       </div>
     </div>`;
+        };
+        counter.textContent = myList.length;
+    });
+    let btns = document.querySelectorAll(".btnn");
 
-    })
+    btns.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            const selectedMovie = moviess[index]
+            console.log(selectedMovie)
+            myList.push(selectedMovie);
+            const myListJSON = JSON.stringify(myList);
+            localStorage.setItem("myList", myListJSON);
+            counter.textContent = myList.length;
+
+
+        });
+    });
+
 
     let cards = document.querySelectorAll(".items");
-
-
-
     cards.forEach(card => {
         card.addEventListener("click", () => {
             let cardId = card.id;
@@ -293,32 +103,69 @@ async function ok(page = 1) {
                 if (cardId == movie.id) {
                     localStorage.setItem("title", `${movie.original_title}`);
                     localStorage.setItem("description", `${movie.overview}`);
-                    localStorage.setItem("poster", `${movie.poster_path}`);
+                    localStorage.setItem("poster", `${movie.backdrop_path}`);
                     localStorage.setItem("rating", `${movie.vote_average}`);
                     localStorage.setItem("casts", `${movie.casts}`);
                     window.open("Movie.html", "_self");
+                    // console.log(card)
 
                 };
-            });
 
+            });
         });
 
     });
 
 
     const highestRate = moviess.filter((item) => item.vote_average >= 6);
-    console.log(highestRate)
-    highestRate.forEach(movie => {
-        document.querySelector(".higher-rating").innerHTML += `
-            <div>
-           <img src=${movie.poster_path}>
-           <h2>${movie.original_title}</h2>
-           <p>${movie.vote_average}</p>
-           <p>${movie.vote_count}</p></div>`
-
-
+    //console.log(highestRate)
+    highestRate.forEach((movie, id) => {
+        if (document.querySelector(".higher-rating")) {
+            document.querySelector(".higher-rating").innerHTML += `
+            <div class="single">
+                <img src=${movie.poster_path}>
+                <div class="info-bot">
+                    <div class="info">
+                       <h2>${movie.original_title}</h2>
+                       <p>${movie.vote_average}</p>
+                  </div> 
+                  <div class="bottom">  
+                      <p>${movie.vote_count}</p>
+                   </div>
+                </div>
+             
+           </div>`
+        }
     })
 }
+
+
+let searchBar = document.getElementById("searchBar");
+if (searchBar) {
+    searchBar.addEventListener("change", (event) => {
+        const filteredMovie = moviess.filter((movie) => movie.original_title = event.target.value);
+        displayMovies(filteredMovie);
+        console.log(displayMovies)
+    });
+}
+
+function displayMovies() {
+    moviess.forEach((movie, index) => {
+        if (mv) {
+            mv.innerHTML = `
+          <div class="items" id="${movie.id}">
+          <img src=${movie.poster_path}>
+          <div class="last">
+              <h2>${movie.original_title}</h2>
+               <p>${movie.popularity}</p>
+          <button class="btnn">+</button>
+       </div>
+    </div>`;
+        }
+    })
+    displayOthers = false;
+}
+
 function VisibilityMonitor(element, showfn, hidefn) {
     let isshown = false;
     function check() {
@@ -343,26 +190,70 @@ function getPageRect() {
 
 function getElementRect(element) {
     let x = 0, y = 0;
-    let w = element.offsetWidth, h = element.offsetHeight;
-    while (element.offsetParent !== null) {
-        x += element.offsetLeft;
-        y += element.offsetTop;
-        element = element.offsetParent;
+    if (element) {
+        let w = element.offsetWidth, h = element.offsetHeight;
+        while (element.offsetParent !== null) {
+            x += element.offsetLeft;
+            y += element.offsetTop;
+            element = element.offsetParent;
+        }
+        return [x, y, x + w, y + h];
     }
-    return [x, y, x + w, y + h];
 }
 
 function rectsIntersect(a, b) {
-    return a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
+    if (a & b) {
+        return a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
+    }
 }
 
 VisibilityMonitor(
     document.getElementById('importantdiv'),
     function () {
-        ok(page);
-        page++
+        if (displayOthers == true) {
+            ok(page);
+            page++
+        }
     },
     function () {
-        // alert('div gone away!');
+        //alert('div gone away!');
     }
 );
+
+
+// console.log(localStorage.getItem("myList"))
+const movies = JSON.parse(localStorage.getItem("myList"));
+if (movies) {
+    movies.forEach((movie, index) => {
+        // console.log(selectedMovie);
+        if (EmptyWatchList) {
+            EmptyWatchList.innerHTML += `
+             <div class="items">
+                 <img src=${movie.poster_path}>
+                 <div class="last">
+                     <h2>${movie.original_title}</h2>
+                     <p>${movie.popularity}</p>
+                     <button class="remove"> - </button>
+                 </div>
+             </div>`;
+        };
+    });
+}
+let removes = document.querySelectorAll(".remove");
+
+console.log(removes)
+removes.forEach((remove, index) => {
+    console.log(remove)
+    remove.addEventListener("click", () => {
+        myList = [
+            ...myList.slice(0, index),
+            ...myList.slice(index + 1)
+        ];
+        const myListJSON = JSON.stringify(myList);
+        // console.log(myList)
+        localStorage.setItem("myList", myListJSON);
+        window.open("list.html", "_self");
+    })
+    counter.textContent = myList.length;
+})
+

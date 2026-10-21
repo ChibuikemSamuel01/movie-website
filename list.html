@@ -19,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./movie.html">Movies</a></li>
+                <li><a href="./movies.html">Movies</a></li>
                <li><a href="./list.html">My List</a><span id="count">0</span></li>
             </ul>
         </nav>
@@ -32,15 +32,49 @@
              <p>All the movies you want to come back to, collected in one place.</p>
             </div>
         </section>
-        <section class="empty-watchlist" id="watchlist">
-            <h2>+</h2>
-            <h3>Your list is ready for a first pick.</h3>
-            <p>Save movies as you browse and they'll show up here.</p>
-            <div class="bot">
-             <a href="./movie.html">Browse movies</a>
-            </div>
+        <section>
+            <div id="watchlist"></div>
         </section>
     </main>
 </body>
+<style>
+    #watchlist{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding-top: 30px;
+        width: 80%;
+        margin: auto;
+        gap: 12px;
+    }
+    .items{
+        position: relative;
+    }
+    .items img{
+        position: relative;
+    }
+    .remove{
+        position: absolute;
+       position: absolute;
+        right: 12px;
+       top: 12px;
+       font-size: 20px;
+       width: 29px;
+       height: 29px;
+       border: 1px solid rgba(255, 255, 255, .35);
+       border-radius: 50%;
+       display: grid;
+       place-items: center;
+       background: rgba(13, 14, 15, .62);
+       color: white;
+       line-height: 1;
+       transition: .2s 
+        
+    }
+    .remove:hover{
+        background-color: yellow;
+        color: black;
+    }
+
+</style>
 <script src="./script.js"></script>
 </html>

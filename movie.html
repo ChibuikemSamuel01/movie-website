@@ -23,7 +23,11 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <div class="bbb">
+        <a href="./movies.html"> <-Back to home</a>
+    </div>
+   
+    <main id="mainn">
         <div class="movie">
             <img src="" alt="">
             <h3></h3>
@@ -37,7 +41,55 @@
         document.querySelector("h3").innerHTML=localStorage.getItem("title");
         document.querySelector("h4").innerHTML=localStorage.getItem("rating");
         document.querySelector("p").innerHTML=localStorage.getItem("description");
-  
     </script>
+    <style>
+        #mainn{
+            height: 100vh;
+            width: 100%;
+           
+        }
+        .movie{
+            overflow-x: hidden;
+            height: 100vh;
+            color: white;
+            position: relative;
+            padding-left: 20px;
+        }
+        .movie img{
+            width: 60%;
+            object-fit: cover;
+            border-radius: 12px;
+            position: relative;
+        }
+        .movie h3{
+            font-size: 50px;
+            font-family: "Oswald", sans-serif ;
+            position: absolute;
+            top: 360px;
+            left: 75px;
+            color: yellow;
+         
+        }
+        .movie p{
+            font-family:"Inter", sans-serif;
+            padding-top: 10px;
+            font-size: 18px;
+        }
+        .movie h4{
+            position: absolute;
+            top: 20px;
+            right: 550px;
+            color:yellow;
+            font-size: 20px;
+        }
+        .bbb{
+            padding-left: 50px;
+            padding-top: 10px;   
+        }
+        .bbb a{
+            font-family:"Inter", sans-serif;
+            font-size: 15px;
+        }
+    </style>
 </body>
 </html>
